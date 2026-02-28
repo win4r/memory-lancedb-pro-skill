@@ -59,7 +59,7 @@ Source: `parsePluginConfig()` in `index.ts`
 | `autoRecall` | `false` | Set `true` to enable (OFF by default) |
 | `captureAssistant` | `false` | Also capture assistant messages |
 | `enableManagementTools` | `false` | Enable memory_stats, memory_list |
-| `sessionMemory.enabled` | `false` (in code) | JSON schema says `true` but code checks `=== true` |
+| `sessionMemory.enabled` | `false` (effective) | If `sessionMemory` object absent → disabled. If object present, `enabled` defaults to `true` (code: `!== false`). Hook only fires when `=== true`. |
 | `sessionMemory.messageCount` | `15` | |
 
 ### Env Var Resolution

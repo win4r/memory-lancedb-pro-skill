@@ -120,9 +120,10 @@ factor = 1 / (1 + 0.5 * logRatio)
 score *= factor
 ```
 - Default anchor: 500 chars
-- At anchor (500) → 1.0, 800 → ~0.75, 1000 → ~0.67, 2000 → ~0.50
-- No penalty for entries shorter than anchor
+- At anchor (500) → 1.0×, 1000 → ~0.78× (log2(2)=1, 1/(1+0.5)=0.67), 2000 → ~0.50×
+- No penalty for entries shorter than anchor (log2 of value <1 is clamped to 0)
 - Set `lengthNormAnchor: 0` to disable
+- **Note**: The JSDoc comment in source says "default: 300" but `DEFAULT_RETRIEVAL_CONFIG` uses `500`
 
 ### 4. Time Decay (multiplicative)
 ```
