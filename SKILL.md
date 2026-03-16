@@ -65,6 +65,7 @@ For detailed deep-dives into each subsystem, read the appropriate reference file
 - **Scope System** (multi-scope isolation, agent access, patterns): See [references/scope_system.md](references/scope_system.md)
 - **Tools & CLI** (agent tools, CLI commands, parameters): See [references/tools_and_cli.md](references/tools_and_cli.md)
 - **Common Gotchas & Troubleshooting**: See [references/troubleshooting.md](references/troubleshooting.md)
+- **Upstream Deployment & Data Migration**: See [references/upstream_deploy_and_migration.md](references/upstream_deploy_and_migration.md)
 
 ## Development Workflows
 
